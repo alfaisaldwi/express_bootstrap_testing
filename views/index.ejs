@@ -1,0 +1,19 @@
+
+    <h1>Accounts</h1>
+    <% if (accounts.length < 1) { %>
+        <p><i>Account Not Found</i></p>
+        
+    <% }  else {
+        %> <% accounts.forEach(acc => { %>
+    <ul>
+        <li>Name : <%= acc.name %></li>
+        <li>Email : <%= acc.email %></li>
+        <li>Phone Number : <%= acc.phoneNumber %></li>
+    </ul>
+    
+    <% }); %>
+     
+    <%} %>
+    
+    
+   
